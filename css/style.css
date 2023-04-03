@@ -1,0 +1,125 @@
+/* reset css tirar todas as margens dos elementos  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* estolização do heder - cabesalho*/
+.cabesalho{
+    background-color: red;
+    display:flex; 
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.cabesalho > img{
+    height: 60px;
+}
+.menu{
+    display: flex;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li:hover{
+    background-color: brown;
+}
+.menu > li > a {
+    color: azure;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+/** estilizando nosso panner **/
+.pizza{
+    background-image: url(../img/pizza.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: top, center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 3px 10px darkgreen;
+}
+.pizza > h1{
+    color: aliceblue;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.botao-vazado{
+    color: aliceblue;
+    text-decoration: none;
+    border: 2px solid wheat;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0 , 0, 0.5);
+}
+.botao-vazado:hove{
+    background-color: aliceblue;
+    color: black;
+}
+main{
+    text-align: center;
+    background-color: blueviolet;
+
+}
+.h1{
+    color: darkgreen;
+}
+.main > hr{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0) 0%, rgba(255,0,0,1) 51%, rgba(255,0,0,0) 100%);
+    border: 0px;
+    height: 3px;
+    margin-top: 10px;
+}
+.sabores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aqua;
+    
+}
+.sabor{
+    margin: 10px;
+    background-color: darkgreen;
+    box-shadow: 3px 3px 3px gray;
+    min-width: 250px;
+    border-radius: 20px 20px 0 0 ;
+}
+.sabor > img{
+    border-radius: 10px 10px 0px 0px;
+    margin:10px 0px 0px 10px;
+    width: 100%;
+}
+.valor{
+    align-items: center;
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin:10px 0px 0px 10px; 
+
+}
+.gosto{
+    background-color: darkgreen;
+    margin: 0px auto;
+    margin-top: 10px;
+    padding: 10px;
+    margin:10px 0px 0px 10px; 
+    
+}
+.promo{
+    display:flex ;
+    overflow: scroll;
+}
